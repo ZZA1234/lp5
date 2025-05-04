@@ -110,6 +110,8 @@ int main(){
     {
         cout<<array[i]<<" ";        
     }
+
+    cout<<endl;
     minimum(array);
     maximum(array);
     sum(array);
