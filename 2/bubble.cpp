@@ -41,16 +41,16 @@ int main()
         arr[i] = rand() % 100;
     }
 
-    // cout << "Original array: ";
-    // printArray(arr, n);
+    cout << "Original array: ";
+    printArray(arr, n);
 
     // Sequential Bubble Sort
     clock_t start = clock();
     bubbleSort(arr, n);
     clock_t end = clock();
 
-    // cout << "Sequential Bubble Sorted array: ";
-    // printArray(arr, n);
+    cout << "Sequential Bubble Sorted array: ";
+    printArray(arr, n);
 
     double sequentialBubbleTime = double(end - start) / CLOCKS_PER_SEC;
 
@@ -62,8 +62,8 @@ int main()
     }
     end = clock();
 
-    // cout << "Parallel Bubble Sorted array: ";
-    // printArray(arr, n);
+    cout << "Parallel Bubble Sorted array: ";
+    printArray(arr, n);
 
     double parallelBubbleTime = double(end - start) / CLOCKS_PER_SEC;
 
