@@ -21,9 +21,9 @@ void sequential_bubble_sort(int arr[],int size){
     }
     double end = omp_get_wtime();
     cout << "Sequential Bubble Sort:\n";
-    // for(int i = 0 ; i < size; i++){
-    //     cout << array[i] << " ";
-    // }
+    for(int i = 0 ; i < size; i++){
+         cout << array[i] << " ";
+     }
     cout << endl;
     cout << "Time Required: " << end - start << endl;
 
@@ -55,9 +55,9 @@ void parallel_bubble_sort(int arr[],int size){
     }
     double end = omp_get_wtime();
     cout << "Parallel Bubble Sort:\n";
-    // for(int i = 0 ; i < size; i++){
-    //     cout << array[i] << " ";
-    // }
+    for(int i = 0 ; i < size; i++){
+     cout << array[i] << " ";
+    }
     cout << endl;
     cout << "Time Required: " << end - start << endl;
 }
@@ -73,10 +73,10 @@ int main(int argc, char const *argv[])
     for(int i = 0 ; i < SIZE; i ++){
         array[i] = rand() % MAX;
     }
-    // cout << "Initial Array:\n";
-    // for(int i = 0 ; i < SIZE; i++){
-    //     cout << array[i] << " ";
-    // }
+    cout << "Initial Array:\n";
+    for(int i = 0 ; i < SIZE; i++){
+    cout << array[i] << " ";
+    }
     cout << endl;
     sequential_bubble_sort(array,SIZE);
     parallel_bubble_sort(array,SIZE);
