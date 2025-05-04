@@ -104,6 +104,12 @@ int main(){
     for(int i = 0; i < N; i++){
         array.push_back(rand() % MAX);
     }
+
+    cout<<"The array elements are: ";
+    for(int i=0;i<N;i++)
+    {
+        cout<<array[i]<<" ";        
+    }
     minimum(array);
     maximum(array);
     sum(array);
