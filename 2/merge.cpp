@@ -107,9 +107,9 @@ int main()
     printArray(arr, n);
 
     // Merge Sort
-    start = clock();
+    clock_t start = clock();
     mergeSort(arr, 0, n - 1);
-    end = clock();
+    clock_t end = clock();
 
     cout << "Sequential Merge Sorted array: ";
     printArray(arr, n);
